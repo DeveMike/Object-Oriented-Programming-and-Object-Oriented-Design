@@ -5,11 +5,18 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
-    int a;
-    cout<<"Anna luku: ";
-    cin>>a;
-    doubleNum(a);
+    int a, b;
 
-    return 0;
+    cout << "Syötä ensimmäinen luku: ";
+    cin >> a;
+    cout << "Syötä toinen luku: ";
+    cin >> b;
+
+    calcSum(a, b);
+    calcDiv(a, b);
+
+    cout <<"Summan palautus: "<< retSum(a,b) << endl;
+    cout <<"Osamäärän palautus: " << retDiv(a, b) << endl;
+
+        return 0;
 }
