@@ -14,4 +14,5 @@ Content:
 
 
 Implementation:
+
 Lectures based on the learning materials, homework assignments, weekly quizzes, and an exam. The tools used in the course include C++ programming language, Qt development environment, and Git version control.
