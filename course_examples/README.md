@@ -74,3 +74,16 @@ Esimerkissä havainnollistetaan funktion ylikuormittamista. Ja siis tässä esim
 <li>Student()</li>
 </ul>
 Lisäksi setAge()-metodiin on lisätty ehto, että age arvon tulisi olla positiivinen.
+
+## Esim7
+
+Oliolistan luonti **vectorin** avulla. Esimerkissä luodaan Cat-luokka, josta sitten luodaan kolme oliota.
+Nämä kolme oliota lisätään catList nimiseen vektoriin. Nyt listan käsittelyssä voidaan hyödyntää for-looppia.
+Tästä olisi tietysti enemmän hyötyä, jos olioita olisi esimerkiksi 100.
+
+## Esim8
+
+Esimerkissä havainnollistetaan **perintää**. Siinä luodaan kantaluokka **Animal**, josta periytetään luokat **Cat** ja **Elephant**.
+Ideana on, että Animal luokkaan tulee kaikille yhteiset ominaisuudet ja Cat- ja Elephant-luokkaan, niiden erityisominaisuuksia.
+
+Esimerkissä myös havainnollistetaan **metodin ylikirjoittamista**. Kantaluokassa Animal määritellään metodi printData, jonka perivät luokat voivat halutessaan ylikirjoittaa. Cat-luokassa printData on ylikirjoitettu, mutta Elephant-luokassa ei. Joten Elephant-luokan oliot käyttävät Animal-luokan printData-metodia.
