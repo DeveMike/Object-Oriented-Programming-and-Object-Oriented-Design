@@ -36,7 +36,5 @@ int main() {
     cout<<"Keskiarvo: "<< objectStudent->getAverage()<<endl;
 
 
-
-
     return 0;
 }

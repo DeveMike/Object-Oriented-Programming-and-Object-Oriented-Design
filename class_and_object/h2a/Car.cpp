@@ -43,5 +43,3 @@ void Car::printData() const {
     cout<<" ---------"<<endl;
 
 }
-
-
