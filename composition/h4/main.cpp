@@ -1,9 +1,11 @@
-#include <iostream>
+#include "car.h"
 
 using namespace std;
 
-int main()
-{
-    cout << "Hello World!" << endl;
+int main() {
+    Car myCar("Corolla", "Toyota");
+    myCar.setEngine();
+    myCar.setWheels();
+    myCar.printDetails();
     return 0;
 }
