@@ -6,11 +6,7 @@ Car::Car()
 
 }
 
-Car::Car(string m, string b)
-{
-    model = m;
-    brand = b;
-}
+Car::Car(string m, string b) : model(m), brand(b) {}
 
 void Car::setEngine()
 {

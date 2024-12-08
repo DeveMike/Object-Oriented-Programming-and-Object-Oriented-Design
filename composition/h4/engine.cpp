@@ -3,11 +3,7 @@
 Engine::Engine() {
 }
 
-Engine::Engine(int hp, double d)
-{
-    horsepower = hp;
-    displacement = d;
-}
+Engine::Engine(int hp, double d) : horsepower(hp), displacement(d) {}
 
 int Engine::getHorsepower()
 {

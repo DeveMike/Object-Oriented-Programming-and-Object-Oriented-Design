@@ -8,10 +8,7 @@ class Car
 {
 private:
     Engine objEngine;
-    Wheel objWheel1;
-    Wheel objWheel2;
-    Wheel objWheel3;
-    Wheel objWheel4;
+    Wheel objWheel1, objWheel2, objWheel3, objWheel4;
     string model;
     string brand;
 

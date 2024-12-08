@@ -3,11 +3,7 @@
 Wheel::Wheel() {
 }
 
-Wheel::Wheel(int s, string t)
-{
-    size = s;
-    type = t;
-}
+Wheel::Wheel(int s, string t) : size(s), type(t) {}
 
 int Wheel::getSize()
 {
