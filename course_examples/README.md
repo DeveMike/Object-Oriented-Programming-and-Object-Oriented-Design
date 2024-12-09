@@ -87,3 +87,42 @@ Esimerkissä havainnollistetaan **perintää**. Siinä luodaan kantaluokka **Ani
 Ideana on, että Animal luokkaan tulee kaikille yhteiset ominaisuudet ja Cat- ja Elephant-luokkaan, niiden erityisominaisuuksia.
 
 Esimerkissä myös havainnollistetaan **metodin ylikirjoittamista**. Kantaluokassa Animal määritellään metodi printData, jonka perivät luokat voivat halutessaan ylikirjoittaa. Cat-luokassa printData on ylikirjoitettu, mutta Elephant-luokassa ei. Joten Elephant-luokan oliot käyttävät Animal-luokan printData-metodia.
+
+## kooste1
+
+ClassRoom luokka sisältää Student-luokan olioita. Esimerkissä luodaan kolme Student-luokan oliota pinoon ja niitä ei siis tarvitse itse deletoida. Yksi Student olio luodaan dynaamiseen muistiin ja se tuhotaan ClassRoom luokan destruktorissa.
+
+## kooste2
+
+LoginForn luokka sisältää Form luokan olion. Tarkoitus oli esitellä kuinka graafisia Qt-sovelluksia tehdessä Form-luokan sisällä luodaan uusi Form luokan olio. Esimerkistä ei tullut niin selkeä, kuin olin suunnitellut.
+
+## qt_parent_example
+
+Esimerkissä FisrtClass luokassa luodaan SecondClass olio, jolle annetaan parent-olioksi, nykyinen olio.
+
+## http_example
+
+Luokassa tehdään http-request ja käytetään signal-slot systeemiä ja muutetaan http-response json-objektiksi.
+
+## perinta_esim.
+
+Esimerkissä on kantaluokka **Animal** ja perivä luokka **Dog**. Dog-luokassa ylikirjoitetaan Animal luokan metodi **callOut**.
+
+Jos jostain syystä halutaan luoda Dog-luokan olio lauseella
+<pre>
+Animal *objD=new Dog;
+</pre>
+on **Animal luokan destruktori määriteltävä virtuaaliseksi**.
+Ja edellä siis objD on Animal-luokan osoitin, joka osoittaa Dog-tyyppistä oliota.
+
+Huom!
+
+<ul>
+<li>Jos Animal-luokassa on virtuaalisia funktioita, ja niitä kutsutaan objD-osoittimen kautta, kutsutaan Dog-luokan ylikirjoittamaa versiota.</li>
+<li>Jos funktiot eivät ole virtuaalisia, kutsutaan Animal-luokan versiota, vaikka kyseessä olisi Dog-olio.</li>
+</ul>
+
+## GrahicalApp1
+
+Qt Widget sovellus, jossa luetaan tekstiä LineEdit:stä (teksti laatikko) ja tulostetaan tekstiä labeliin.
+Esimerkissä harjoitellaan myös toisen ikkunan (Widgetin) avaamista ja datan vientiä siihen.
