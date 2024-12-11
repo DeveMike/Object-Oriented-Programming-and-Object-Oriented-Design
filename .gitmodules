@@ -1,0 +1,3 @@
+[submodule "cource_examples/tvt24kmo-esimerkit"]
+	path = cource_examples/tvt24kmo-esimerkit
+	url = https://github.com/alaluuk/tvt24kmo-esimerkit.git
