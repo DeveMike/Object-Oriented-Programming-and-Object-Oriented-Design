@@ -1,9 +1,11 @@
-#include <iostream>
+#include <QCoreApplication>
+#include "myclass.h"
 
-using namespace std;
+int main(int argc, char *argv[]) {
+    QCoreApplication a(argc, argv);
 
-int main()
-{
-    cout << "Hello World!" << endl;
-    return 0;
+    MyClass obj;
+    obj.raiseMySignal();
+
+    return a.exec();
 }
